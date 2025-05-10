@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Promociones - DJC</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Helvetica Neue', Arial, sans-serif;
+      background-color: #f4f4f4;
+      color: #333;
+      line-height: 1.6;
+    }
+    header {
+      background-color: #111;
+      color: #fff;
+      padding: 10px 20px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    }
+    header .logo {
+      font-weight: bold;
+      font-size: 20px;
+    }
+    nav a {
+      color: white;
+      margin-left: 15px;
+      text-decoration: none;
+      font-weight: 500;
+      transition: all 0.3s ease;
+    }
+    nav a:hover {
+      text-decoration: underline;
+      color: #00aaff;
+    }
+    main {
+      padding: 50px 20px;
+      max-width: 1200px;
+      margin: 0 auto;
+      background-color: #fff;
+      border-radius: 10px;
+      box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+    }
+    h1 {
+      font-size: 36px;
+      color: #444;
+      font-weight: 700;
+      text-align: center;
+      margin-bottom: 30px;
+    }
+    .productos {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 20px;
+      justify-content: space-between;
+    }
+    .producto {
+      background-color: #fff;
+      padding: 10px;
+      border-radius: 10px;
+      box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+      width: 300px;  /* Ancho fijo */
+      text-align: center;
+    }
+    .producto img {
+      max-width: 100%;
+      height: auto;
+      border-radius: 10px;
+      box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    }
+    .descuento {
+      background-color: #ff4e4e;
+      color: white;
+      padding: 10px;
+      margin: 10px 0;
+      border-radius: 5px;
+      font-weight: 600;
+      font-size: 18px;
+    }
+    .precio {
+      font-size: 18px;
+      font-weight: 500;
+      color: #888;
+      text-decoration: line-through;
+    }
+    .nuevo-precio {
+      font-size: 22px;
+      font-weight: 700;
+      color: #00aaff;
+    }
+    footer {
+      background-color: #111;
+      color: white;
+      text-align: center;
+      padding: 20px;
+      margin-top: 60px;
+      font-size: 16px;
+    }
+    footer p {
+      margin: 5px 0;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <div class="logo">📱 DJC Mobile</div>
+    <nav>
+      <a href="index.html">Inicio</a>
+      <a href="nosotros.html">Nosotros</a>
+      <a href="promociones.html">Promociones</a>
+      <a href="contacto.html">Contacto</a>
+      <a href="faq.html">FAQ</a>
+      <a href="resenas.html">Reseñas</a>
+    </nav>
+  </header>
+
+  <main>
+    <h1>Promociones Especiales</h1>
+    <div class="productos">
+
+      <!-- Producto 1 -->
+      <div class="producto">
+        <img src="./assets/img_0.jpg" alt="Samsung Galaxy S23" />
+        <h3>Samsung Galaxy S23</h3>
+        <p class="descuento">¡50% de descuento!</p>
+        <p class="precio">$1599</p>
+        <p class="nuevo-precio">$799</p>
+        <button>Agregar al carrito</button>
+      </div>
+
+      <!-- Producto 2 -->
+      <div class="producto">
+        <img src="./assets/img_0.jpg" alt="iPhone 14 Pro" />
+        <h3>iPhone 14 Pro</h3>
+        <p class="descuento">Antes: $1999, Ahora: $1599</p>
+        <p class="precio">$1999</p>
+        <p class="nuevo-precio">$1599</p>
+        <button>Agregar al carrito</button>
+      </div>
+
+      <!-- Producto 3 -->
+      <div class="producto">
+        <img src="./assets/img_0.jpg" alt="Motorola Edge 30" />
+        <h3>Motorola Edge 30</h3>
+        <p class="descuento">¡25% de descuento!</p>
+        <p class="precio">$649</p>
+        <p class="nuevo-precio">$487</p>
+        <button>Agregar al carrito</button>
+      </div>
+
+      <!-- Producto 4 -->
+      <div class="producto">
+        <img src="./assets/img_0.jpg" alt="Xiaomi Redmi Note 12" />
+        <h3>Xiaomi Redmi Note 12</h3>
+        <p class="descuento">¡40% de descuento!</p>
+        <p class="precio">$499</p>
+        <p class="nuevo-precio">$299</p>
+        <button>Agregar al carrito</button>
+      </div>
+
+      <!-- Producto 5 -->
+      <div class="producto">
+        <img src="./assets/img_0.jpg" alt="Huawei P50 Pro" />
+        <h3>Huawei P50 Pro</h3>
+        <p class="descuento">¡30% de descuento!</p>
+        <p class="precio">$899</p>
+        <p class="nuevo-precio">$629</p>
+        <button>Agregar al carrito</button>
+      </div>
+
+      <!-- Producto 6 -->
+      <div class="producto">
+        <img src="./assets/img_0.jpg" alt="Nokia X100" />
+        <h3>Nokia X100</h3>
+        <p class="descuento">¡10% de descuento!</p>
+        <p class="precio">$299</p>
+        <p class="nuevo-precio">$269</p>
+        <button>Agregar al carrito</button>
+      </div>
+
+    </div>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 DJC. Todos los derechos reservados.</p>
+    <p>Tel: +52 11 1234 5678 | Email: contacto@djc.com</p>
+  </footer>
+
+</body>
+</html>

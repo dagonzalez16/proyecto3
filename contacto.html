@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Contacto - DJC</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Helvetica Neue', Arial, sans-serif;
+      background-color: #f4f4f4;
+      color: #333;
+      line-height: 1.6;
+    }
+
+    header {
+      background-color: #111;
+      color: #fff;
+      padding: 10px 20px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    }
+
+    header .logo {
+      font-weight: bold;
+      font-size: 20px;
+    }
+
+    nav a {
+      color: white;
+      margin-left: 15px;
+      text-decoration: none;
+      font-weight: 500;
+      transition: all 0.3s ease;
+    }
+
+    nav a:hover {
+      text-decoration: underline;
+      color: #00aaff;
+    }
+
+    main {
+      padding: 40px 20px;
+      max-width: 1000px;
+      margin: 0 auto;
+      background-color: #fff;
+      border-radius: 10px;
+      box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+    }
+
+    h1 {
+      font-size: 36px;
+      color: #444;
+      font-weight: 700;
+      text-align: center;
+      margin-bottom: 30px;
+    }
+
+    .contacto-info {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 30px;
+      margin-bottom: 40px;
+    }
+
+    .contacto-info > div {
+      flex: 1 1 45%;
+      min-width: 280px;
+    }
+
+    .contacto-info h2 {
+      font-size: 24px;
+      color: #444;
+      margin-bottom: 10px;
+      text-transform: uppercase;
+      font-weight: 700;
+    }
+
+    .contacto-info p {
+      font-size: 18px;
+      color: #666;
+      margin: 10px 0;
+    }
+
+    .contacto-info p strong {
+      color: #00aaff;
+      font-weight: 600;
+    }
+
+    .info-box {
+      padding: 20px;
+      background-color: #e8f4ff;
+      border-radius: 10px;
+      box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+      border-left: 5px solid #00aaff;
+    }
+
+    iframe {
+      width: 100%;
+      height: 300px;
+      border: 0;
+      border-radius: 10px;
+    }
+
+    .formulario-wrapper {
+      display: flex;
+      justify-content: center;
+      margin-top: 40px;
+    }
+
+    .formulario {
+      width: 100%;
+      max-width: 500px;
+      display: flex;
+      flex-direction: column;
+      gap: 15px;
+      padding: 20px;
+      background-color: #fafafa;
+      border-radius: 10px;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+    }
+
+    .formulario input,
+    .formulario textarea {
+      padding: 10px;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+      font-size: 16px;
+      width: 100%;
+    }
+
+    .formulario button {
+      padding: 10px;
+      background-color: #00aaff;
+      color: white;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+      font-size: 18px;
+    }
+
+    .formulario button:hover {
+      background-color: #0088cc;
+    }
+
+    .whatsapp-button {
+      position: fixed;
+      bottom: 20px;
+      right: 20px;
+      background-color: #25d366;
+      border: none;
+      border-radius: 50%;
+      padding: 15px;
+      font-size: 22px;
+      color: white;
+      cursor: pointer;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+      z-index: 999;
+    }
+
+    .whatsapp-button:hover {
+      background-color: #128c7e;
+    }
+
+    footer {
+      background-color: #111;
+      color: white;
+      text-align: center;
+      padding: 20px;
+      margin-top: 60px;
+      font-size: 16px;
+    }
+
+    footer p {
+      margin: 5px 0;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <div class="logo">📱 DJC Mobile</div>
+    <nav>
+      <a href="index.html">Inicio</a>
+      <a href="nosotros.html">Nosotros</a>
+      <a href="promociones.html">Promociones</a>
+      <a href="contacto.html">Contacto</a>
+      <a href="faq.html">FAQ</a>
+      <a href="resenas.html">Reseñas</a>
+    </nav>
+  </header>
+
+  <main>
+    <h1>Contacto</h1>
+
+    <div class="contacto-info">
+      <!-- Mapa -->
+      <div>
+        <h2>Sucursal</h2>
+        <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d15029.81908042015!2d-58.443915!3d-34.611778!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bcb61f957e0c5b%3A0x80eb30c3e383417!2sAv.%20Rivadavia%2C%20C1001%20CABA%2C%20Argentina!5e0!3m2!1ses!2sus!4v1678302954041!5m2!1ses!2sus" allowfullscreen="" loading="lazy"></iframe>
+      </div>
+
+      <!-- Datos de contacto -->
+      <div>
+        <h2>Datos de contacto</h2>
+        <div class="info-box">
+          <p><strong>Email de ventas:</strong> ventas@tiendacel.com</p>
+          <p><strong>Teléfono:</strong> +54 11 1234 5678</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Formulario centrado -->
+    <h2 style="text-align: center; color: #444; margin-bottom: 10px;">Envíanos un mensaje</h2>
+    <div class="formulario-wrapper">
+      <form class="formulario">
+        <input type="text" id="nombre" name="nombre" placeholder="Nombre" required />
+        <input type="text" id="apellido" name="apellido" placeholder="Apellido" required />
+        <textarea id="mensaje" name="mensaje" rows="4" placeholder="Mensaje" required></textarea>
+        <button type="submit">Enviar mensaje</button>
+      </form>
+    </div>
+  </main>
+
+  <!-- Botón de WhatsApp flotante -->
+  <a href="" target="_blank">
+    <button class="whatsapp-button">📱</button>
+  </a>
+
+  <footer>
+    <p>&copy; 2025 DJC. Todos los derechos reservados.</p>
+    <p>Tel: +52 11 1234 5678 | Email: contacto@djc.com</p>
+  </footer>
+
+</body>
+</html>
