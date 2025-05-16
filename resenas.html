@@ -14,7 +14,7 @@
     }
 
     header {
-      background-color: #111;
+      background-color: darkcyan;
       color: #fff;
       padding: 10px 20px;
       display: flex;
@@ -25,6 +25,7 @@
     header .logo {
       font-weight: bold;
       font-size: 20px;
+      display: flex;
     }
 
     nav a {
@@ -94,17 +95,43 @@
       text-align: center;
       padding: 20px;
       margin-top: 60px;
+      display: flex;
+      flex-direction: column;
     }
 
     footer p {
       margin: 5px 0;
+    }
+
+    .whatsapp-button {
+      position: fixed;
+      bottom: 20px;
+      right: 20px;
+      background-color: #25d366;
+      border: none;
+      border-radius: 50%;
+      padding: 15px;
+      font-size: 22px;
+      color: white;
+      cursor: pointer;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+      z-index: 999;
+    }
+
+    .whatsapp-button:hover {
+      background-color: #128c7e;
+    }
+
+    #logo-cut {
+      width: 70px;
+      height: 50px;
     }
   </style>
 </head>
 <body>
 
   <header>
-    <div class="logo">📱 DJC Mobile</div>
+    <div class="logo"><img id="logo-cut" src="./assets/logo-cut.png" alt="logo"><p> DJC Mobile</p></div>
     <nav>
       <a href="index.html">Inicio</a>
       <a href="nosotros.html">Nosotros</a>
@@ -176,7 +203,14 @@
 
   </main>
 
+  <a href="" target="_blank">
+    <button class="whatsapp-button">📱</button>
+  </a>
+
   <footer>
+    <a href=""><img style="width: 5%;" src="./assets/fb.png" alt=""></a>
+    <a href=""><img style="width: 6%;" src="./assets/ig.png" alt=""></a>
+    
     <p>&copy; 2025 DJC. Todos los derechos reservados.</p>
     <p>Tel: +52 11 1234 5678 | Email: contacto@djc.com</p>
   </footer>

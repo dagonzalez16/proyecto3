@@ -14,7 +14,7 @@
     }
 
     header {
-      background-color: #111;
+      background-color: darkcyan;
       color: #fff;
       padding: 10px 20px;
       display: flex;
@@ -26,6 +26,7 @@
     header .logo {
       font-weight: bold;
       font-size: 20px;
+      display: flex;
     }
 
     nav a {
@@ -171,17 +172,24 @@
       padding: 20px;
       margin-top: 60px;
       font-size: 16px;
+      display: flex;
+      flex-direction: column;
     }
 
     footer p {
       margin: 5px 0;
+    }
+
+    #logo-cut {
+      width: 70px;
+      height: 50px;
     }
   </style>
 </head>
 <body>
 
   <header>
-    <div class="logo">📱 DJC Mobile</div>
+    <div class="logo"><img id="logo-cut" src="./assets/logo-cut.png" alt="logo"><p> DJC Mobile</p></div>
     <nav>
       <a href="index.html">Inicio</a>
       <a href="nosotros.html">Nosotros</a>
@@ -230,6 +238,9 @@
   </a>
 
   <footer>
+    <a href=""><img style="width: 5%;" src="./assets/fb.png" alt=""></a>
+    <a href=""><img style="width: 6%;" src="./assets/ig.png" alt=""></a>
+    
     <p>&copy; 2025 DJC. Todos los derechos reservados.</p>
     <p>Tel: +52 11 1234 5678 | Email: contacto@djc.com</p>
   </footer>
